@@ -21,7 +21,8 @@ def format_phone(string):
 
 
 def main():
-    with open('./assets/potential-contacts.txt', 'r') as f:
+    # with open('./assets/potential-contacts.txt', 'r') as f:
+    with open('./tests/content.txt', 'r') as f:
         lines = f.readlines()
     try:
         os.mkdir('content')
@@ -46,6 +47,8 @@ def main():
 
     sorted_numbers = sorted(phone_dict.keys())
     email_lst = sorted(email_lst)
+    print(len(sorted_numbers))
+    print(len(email_lst))
 
     for email in email_lst:
         emails.write(f'{email}\n')
