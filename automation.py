@@ -21,8 +21,7 @@ def format_phone(string):
 
 
 def main():
-    # with open('./assets/potential-contacts.txt', 'r') as f:
-    with open('./tests/content.txt', 'r') as f:
+    with open('./assets/potential-contacts.txt', 'r') as f:
         lines = f.readlines()
     try:
         os.mkdir('content')
